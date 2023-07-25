@@ -7,23 +7,20 @@
 
 string[] ThreeSimbvols(string[] Arr)
 {
-  int j = 0;                                      
-  string[] newArr = new string[Arr.Length];  
-  for (int i = 0; i < Arr.Length; i++)        
+  int j = 0;          // переменная                            
+  string[] newArr = new string[Arr.Length];  // новый массив
+  for (int i = 0; i < Arr.Length; i++)      // цикл по изначальному массиву  
   {
-    if (Arr[i].Length <= 3)                    
+    if (Arr[i].Length <= 3)        // Условие если длина меньше и равна 3 симбволам            
     {
-      newArr[j] = Arr[i];                     
-      j++;                                         
+      newArr[j] = Arr[i];         // добавляем в новый массив по индексу j            
+      j++;           // увеличиваем j                              
 
     }
   }
-  Array.Resize(ref newArr, j);                    
+  Array.Resize(ref newArr, j);   // сокращаем массив до j элементов                 
   return newArr;
 }
-
-
-
 
 //Варианты для массива, можно выбрать другой
 // string[] arr = { "Hello", "2", "world", ":-)" };                          
