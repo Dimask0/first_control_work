@@ -5,15 +5,15 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
-string[] ThreeAndLess(string[] inputArr)
+string[] ThreeSimbvols(string[] Arr)
 {
   int j = 0;                                      
-  string[] newArr = new string[inputArr.Length];  
-  for (int i = 0; i < inputArr.Length; i++)        
+  string[] newArr = new string[Arr.Length];  
+  for (int i = 0; i < Arr.Length; i++)        
   {
-    if (inputArr[i].Length <= 3)                    
+    if (Arr[i].Length <= 3)                    
     {
-      newArr[j] = inputArr[i];                     
+      newArr[j] = Arr[i];                     
       j++;                                         
 
     }
@@ -25,9 +25,9 @@ string[] ThreeAndLess(string[] inputArr)
 
 
 
-//Пример массива, можно выбрать другой
-string[] arr = { "Hello", "2", "world", ":-)" };                          
-// string[] arr= {"1234", "1567", "-2", "computer science"};
+//Варианты для массива, можно выбрать другой
+// string[] arr = { "Hello", "2", "world", ":-)" };                          
+string[] arr= {"1234", "1567", "-2", "computer science"};
 // string[] arr = { "Russia", "Denmark", "Kazan" };
 
-System.Console.WriteLine(string.Join(", ", ThreeAndLess(arr))); 
+System.Console.WriteLine(string.Join(", ", ThreeSimbvols(arr))); 
